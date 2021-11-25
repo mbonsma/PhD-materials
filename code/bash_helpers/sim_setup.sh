@@ -9,7 +9,7 @@
 mkdir $SCRATCH/$2 # make folder for this submission to run from 
 # copy simulation and submission script to SCRATCH
 cp simulation_mutating_phage_niagara.py $SCRATCH/$2
-cp niagara_submit_script_restart.sh $SCRATCH/$2 # copy submit script to folder
+cp niagara_submit_script.sh $SCRATCH/$2
 cp $1 $SCRATCH/$2
 
 cd $SCRATCH/$2

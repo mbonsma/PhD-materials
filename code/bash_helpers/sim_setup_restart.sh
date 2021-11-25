@@ -26,9 +26,9 @@ do
     timestamp=${fn:11:26}
     echo python simulation_mutating_phage_niagara_resume.py $timestamp > doserialjob$i.sh; # make run script for each set of parameters
     cd ..;
-    echo "simulation started"
+    echo "${i} simulation started"
   else
-    echo "simulation not started, leaving alone"
+    echo "${i} simulation not started, leaving alone"
   fi
 
 done
