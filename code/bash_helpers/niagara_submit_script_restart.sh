@@ -47,7 +47,8 @@ cd $SLURM_SUBMIT_DIR
  
 # Turn off implicit threading
 export OMP_NUM_THREADS=1
- 
+
+module load NiaEnv/2018a 
 module load gnu-parallel/20180322 
 module load python/3.6.4-anaconda5.1.0
  
