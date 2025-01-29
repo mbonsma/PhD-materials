@@ -244,6 +244,8 @@ def simulation_stats(folder, timestamp):
     df['eta'] = [eta]
     df['e'] = [e]
     df['B'] = [B]
+    df['f'] = [f]
+    df['pv'] = [pv]
     df['m_init'] = [m_init]
     df['pv_type'] = [pv_type]
     df['gen_max'] = [gen_max]
@@ -289,7 +291,7 @@ def simulation_stats(folder, timestamp):
     df['mean_bac_establishment_time'] = [establishment_time_bac]
     
     # add mean_m to dataframe by joining on parameters that vary
-    new_data = all_params.merge(df, on = ['C0', 'mu', 'eta', 'e', 'B', 'm_init', 'theta'])
+    new_data = all_params.merge(df, on = ['C0', 'mu', 'eta', 'e', 'B', 'f', 'pv' 'm_init', 'theta'])
     
     try:
         all_data.columns == new_data.columns
